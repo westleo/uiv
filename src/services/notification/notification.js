@@ -43,7 +43,7 @@ const init = (options, cb, resolve = null, reject = null) => {
     }
   })
   instance.$mount()
-  document.body.appendChild(instance.$el)
+  document.getElementById('alert-group').appendChild(instance.$el)
   queue.push(instance)
 }
 
